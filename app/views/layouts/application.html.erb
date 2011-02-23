@@ -2,11 +2,20 @@
 <html>
 	<head>
 		<title>
-			Ruby on Rails Tutorial Sample App | <%= @title %>
+			<%= title %>
 		</title>
 		<%= csrf_meta_tag %>
+		<%= render 'layouts/stylesheets'%>
 	</head>
 	<body>
-		<%= yield %>
+		<div class="container">
+			<section class="round">
+				<%= render 'layouts/header'%>
+				<%= yield %>
+			</section>
+			<section class="round">
+				<%= render 'layouts/footer'%>
+			</section>
+		</div>
 	</body>
 </html>
