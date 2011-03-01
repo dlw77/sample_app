@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.4'
 gem 'sqlite3-ruby', '1.3.3', :require => 'sqlite3'
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -36,6 +37,7 @@ group :test do
 	gem 'autotest-fsevent', '0.2.4'
 	gem 'autotest-growl', '0.2.9'
 	gem 'annotate-models'
+	gem 'factory_girl_rails'
 end
 
 group :development do
